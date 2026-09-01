@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GigDesk privacy policy.">
+<title>GigDesk Privacy Policy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Mono:wght@500&display=swap');
+
+  :root {
+    --bg: #faf9fb;
+    --surface: #ffffff;
+    --surface-raised: #f3f1f7;
+    --text: #1d1a29;
+    --text-muted: #63606f;
+    --text-faint: #8b8895;
+    --accent: #5b4fe0;
+    --accent-ink: #4a3fc9;
+    --accent-tint: #ece9fb;
+    --border: #e6e3ee;
+    --border-strong: #d3cfe0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15131d;
+      --surface: #1c1a27;
+      --surface-raised: #242130;
+      --text: #ece9f5;
+      --text-muted: #a8a4b8;
+      --text-faint: #706c80;
+      --accent: #9089f0;
+      --accent-ink: #a89ffa;
+      --accent-tint: #2a2540;
+      --border: #2d2a3b;
+      --border-strong: #3a3650;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #15131d;
+    --surface: #1c1a27;
+    --surface-raised: #242130;
+    --text: #ece9f5;
+    --text-muted: #a8a4b8;
+    --text-faint: #706c80;
+    --accent: #9089f0;
+    --accent-ink: #a89ffa;
+    --accent-tint: #2a2540;
+    --border: #2d2a3b;
+    --border-strong: #3a3650;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--accent-ink); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px 96px;
+  }
+
+  header.mast {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+
+  .mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    background: linear-gradient(155deg, #6a5cf0, #4438c9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    box-shadow: 0 1px 2px rgba(30, 20, 90, 0.25);
+  }
+  .mark svg { width: 22px; height: 22px; }
+
+  .mast-text { min-width: 0; }
+
+  .mast-eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 4px;
+  }
+
+  h1.title {
+    font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
+    font-size: clamp(28px, 4.5vw, 34px);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0;
+    color: var(--text);
+    text-wrap: balance;
+  }
+
+  .meta-line {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12.5px;
+    color: var(--text-faint);
+    margin-top: 10px;
+  }
+
+  .lede {
+    font-size: 18px;
+    color: var(--text-muted);
+    max-width: 62ch;
+    margin: 0 0 36px;
+  }
+
+  .summary-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    padding: 22px 26px;
+    margin-bottom: 48px;
+  }
+
+  .summary-card h2 {
+    font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin: 0 0 12px;
+    font-weight: 600;
+  }
+
+  .summary-card ul {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--text);
+  }
+  .summary-card li { margin-bottom: 8px; }
+  .summary-card li:last-child { margin-bottom: 0; }
+  .summary-card li::marker { color: var(--accent); }
+
+  nav.toc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px 24px;
+    margin-bottom: 56px;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px;
+  }
+  nav.toc a {
+    color: var(--text-muted);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+    border-bottom: 1px solid transparent;
+  }
+  nav.toc a:hover { color: var(--accent-ink); border-bottom-color: var(--border-strong); }
+
+  section {
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+    scroll-margin-top: 24px;
+  }
+  section:first-of-type { border-top: none; margin-top: 0; padding-top: 0; }
+
+  h2 {
+    font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin: 0 0 16px;
+    text-wrap: balance;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  h2 .num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-faint);
+  }
+
+  p { margin: 0 0 16px; max-width: 68ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul.plain, ol.plain {
+    margin: 0 0 16px;
+    padding-left: 22px;
+    max-width: 68ch;
+  }
+  ul.plain li, ol.plain li { margin-bottom: 8px; }
+  ul.plain li:last-child, ol.plain li:last-child { margin-bottom: 0; }
+  ul.plain li::marker { color: var(--accent); }
+
+  .callout {
+    background: var(--surface-raised);
+    border-radius: 8px;
+    padding: 16px 18px;
+    font-size: 15.5px;
+    color: var(--text-muted);
+    max-width: 68ch;
+  }
+
+  code {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.86em;
+    background: var(--accent-tint);
+    color: var(--accent-ink);
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12.5px;
+    color: var(--text-faint);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 520px) {
+    nav.toc { grid-template-columns: 1fr; }
+    header.mast { padding-top: 40px; }
+  }
+</style>
+</head>
+<body>
+
+
+<div class="page">
+
+  <header class="mast">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5c-3.6 0-6.5 2.5-6.5 6.2 0 3.1 2.1 5.2 4.9 6.6.4.2.6.6.6 1v2.2c0 .5.5.8.9.5l3-2.1c2.9-1 5.6-3.5 5.6-7.2 0-3.9-3.4-7.2-8.5-7.2Z" stroke="white" stroke-width="1.6" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="mast-text">
+      <p class="mast-eyebrow">GigDesk &middot; Legal</p>
+      <h1 class="title">Privacy Policy</h1>
+      <p class="meta-line">Last updated September 1, 2026</p>
+    </div>
+  </header>
+
+  <p class="lede">
+    GigDesk is a scheduling and booking app for solo service businesses,
+    published by GigDesk (<code>jfecardona@gmail.com</code>). This policy
+    explains what the app stores, the few places data can leave your device,
+    and why.
+  </p>
+
+  <div class="summary-card">
+    <h2>In short</h2>
+    <ul>
+      <li>Your bookings, customers, payments, expenses, and business settings are stored <strong>only on your device</strong>, unless you turn on Google Drive backup.</li>
+      <li>If you turn on Drive backup, that data is copied to a folder in <strong>your own</strong> Google Drive that only GigDesk can see &mdash; never to any server we operate, because we don't operate one.</li>
+      <li>We don't sell your data, and we don't run analytics or tracking on your business data.</li>
+      <li>The app shows ads via Google AdMob, which involves Google collecting advertising identifiers, described below.</li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-label="Sections">
+    <a href="#stored">What we store on your device</a>
+    <a href="#contacts">Contacts</a>
+    <a href="#google">Google Sign-In &amp; Drive backup</a>
+    <a href="#ads">Advertising (Google AdMob)</a>
+    <a href="#donotdo">What we don't do</a>
+    <a href="#retention">Data retention &amp; deletion</a>
+    <a href="#delete-data">Delete your account &amp; data</a>
+    <a href="#children">Children's privacy</a>
+    <a href="#changes">Changes to this policy</a>
+  </nav>
+
+  <section id="stored">
+    <h2><span class="num">01</span> Information we store on your device</h2>
+    <p>When you use GigDesk, you enter information about your own business:</p>
+    <ul class="plain">
+      <li>Customer names, phone numbers, and email addresses &mdash; as you choose to enter them; GigDesk never requires this.</li>
+      <li>Bookings: dates, times, services, prices, locations, and notes.</li>
+      <li>Payments and expenses, including amounts and which account they used.</li>
+      <li>Business settings: your business name, currency, and preferences.</li>
+    </ul>
+    <p>All of this is stored locally in a database on your device. It is never transmitted anywhere unless you explicitly enable Google Drive backup.</p>
+  </section>
+
+  <section id="contacts">
+    <h2><span class="num">02</span> Contacts</h2>
+    <p>
+      If you use the &ldquo;Import from Contacts&rdquo; feature, GigDesk opens your
+      device's own contact picker. You choose a single contact; GigDesk receives
+      only that contact's name and phone number to pre-fill a new customer record.
+      GigDesk never requests ongoing access to your contacts and cannot read your
+      contact list outside of this one-at-a-time picker.
+    </p>
+  </section>
+
+  <section id="google">
+    <h2><span class="num">03</span> Google Sign-In and Google Drive backup</h2>
+    <p>Google Drive backup is optional. If you choose to enable it:</p>
+    <ul class="plain">
+      <li><strong>Sign-in</strong> uses Google Sign-In to identify your Google account. This alone does not give GigDesk access to your Drive.</li>
+      <li><strong>Backup</strong> is a separate, explicit permission step using Google's <code>drive.file</code> scope &mdash; the most restrictive Drive scope available. GigDesk can only see, create, and manage files <strong>it creates itself</strong>, inside a &ldquo;GigDesk&rdquo; folder. It cannot see, read, or modify any other file in your Google Drive.</li>
+      <li>Backups are copies of the local data described above, written to that folder as a database snapshot. The most recent 5 backups are kept; older ones are removed automatically.</li>
+      <li>Backups are stored <strong>in your own Google Drive</strong>, subject to your own Google account's storage and <a href="https://policies.google.com/privacy">Google's own privacy policy</a>. We never receive a copy.</li>
+      <li>You can disconnect Google Drive backup at any time from the app's Settings, which signs you out. Deleting the backup files themselves is done from your own Google Drive, or from the app's Backup &amp; Restore screen, which lists and can restore or leave in place each backup.</li>
+    </ul>
+  </section>
+
+  <section id="ads">
+    <h2><span class="num">04</span> Advertising (Google AdMob)</h2>
+    <p>
+      GigDesk is a free app supported by ads served through Google AdMob.
+      AdMob may collect device and advertising identifiers to serve and
+      measure ads. This data collection is performed by Google, governed by
+      Google's own policies:
+    </p>
+    <ul class="plain">
+      <li><a href="https://policies.google.com/privacy">Google's Privacy Policy</a></li>
+      <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from AdMob</a></li>
+    </ul>
+    <p>
+      If you're in the EEA or UK, GigDesk shows a consent form before any ad
+      is requested, using Google's User Messaging Platform. You choose there
+      whether to allow personalised advertising, or to manage or reject it
+      where offered; your choice is stored on your device and can be changed
+      at any time by clearing the app's data.
+    </p>
+  </section>
+
+  <section id="donotdo">
+    <h2><span class="num">05</span> What we don't do</h2>
+    <ul class="plain">
+      <li>We do not run our own backend server &mdash; there is nowhere for your business data to go except your device and, optionally, your own Google Drive.</li>
+      <li>We do not sell or rent your data to anyone.</li>
+      <li>We do not use analytics SDKs that track your usage of the app.</li>
+      <li>We do not access your business data &mdash; it is technically inaccessible to us, since it lives on your device or in a Drive folder only your account can authorize access to.</li>
+    </ul>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">06</span> Data retention and deletion</h2>
+    <ul class="plain">
+      <li>Local data stays on your device until you delete it &mdash; by uninstalling the app, clearing app data, or deleting individual records within the app.</li>
+      <li>Backup files in Google Drive stay until you delete them yourself, or until automatic pruning removes older backups beyond the most recent 5.</li>
+      <li>Uninstalling GigDesk does not delete your Google Drive backups &mdash; this is intentional, since the whole point of the backup feature is to survive an uninstall or a lost device.</li>
+    </ul>
+  </section>
+
+  <section id="delete-data">
+    <h2><span class="num">07</span> Delete your GigDesk account &amp; data</h2>
+    <p>
+      GigDesk (developer contact: <code>jfecardona@gmail.com</code>) never
+      creates a separate account of its own &mdash; &ldquo;signing in&rdquo;
+      just authorizes the optional Google Drive backup feature using your
+      existing Google account. Because of that, there's no GigDesk account to
+      delete on a server; deletion happens directly on your device and in
+      your own Google Drive, immediately, with no waiting period.
+    </p>
+    <p><strong>To delete everything, in order:</strong></p>
+    <ol class="plain">
+      <li>Open GigDesk &rarr; <strong>Settings</strong>. If you've enabled Drive backup, tap <strong>Disconnect Google Drive backup</strong> &mdash; this signs you out and stops any further backups immediately.</li>
+      <li>(Optional) In your own Google Drive, delete the &ldquo;GigDesk&rdquo; folder to remove any backup snapshots already stored there. GigDesk cannot do this for you remotely &mdash; it only ever has access to that one folder, never a way to reach into your Drive from outside the app.</li>
+      <li>Uninstall the GigDesk app from your device. This immediately and permanently deletes all locally stored data &mdash; customers, bookings, payments, expenses, and settings &mdash; since that data lives only in the app's local database.</li>
+    </ol>
+    <p>
+      You can also delete data selectively without uninstalling: any
+      individual customer, booking, payment, or expense record can be deleted
+      from within the app at any time, from that record's own screen.
+    </p>
+    <p><strong>What's deleted vs. kept, and for how long:</strong></p>
+    <ul class="plain">
+      <li>Local data (on your device) is deleted <strong>immediately</strong> when you uninstall the app or delete a record &mdash; there is no retention period, because GigDesk has no server to hold a copy.</li>
+      <li>Drive backups are deleted <strong>immediately</strong> once you remove them from your Google Drive yourself; GigDesk's automatic pruning also removes backups older than the 5 most recent on its own.</li>
+      <li>GigDesk and its developer never receive or retain a copy of any of this data at any point, so there is nothing left on our side after these steps.</li>
+    </ul>
+    <div class="callout">
+      Questions about deleting your data: <code>jfecardona@gmail.com</code>
+    </div>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">08</span> Children's privacy</h2>
+    <p>
+      GigDesk is a business tool intended for adults managing their own
+      service business. It is not directed at children, and we do not
+      knowingly collect information from children.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">09</span> Changes to this policy</h2>
+    <p>
+      If this policy changes, we'll update the &ldquo;Last updated&rdquo; date at the
+      top. Continued use of the app after a change means you accept the
+      updated policy.
+    </p>
+    <div class="callout">
+      Questions about this policy or your data: <code>jfecardona@gmail.com</code>
+    </div>
+  </section>
+
+  <footer>
+    <span>GigDesk &middot; Privacy Policy</span>
+    <span>Last updated September 1, 2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
