@@ -1,0 +1,343 @@
+<title>Balloon Pop Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --bg: #fbfcfe;
+    --surface: #ffffff;
+    --border: #e3e8f0;
+    --text: #1b2a4a;
+    --text-muted: #5b6b85;
+    --accent: #3b82f6;
+    --accent-soft: #eaf2fe;
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f172a;
+      --surface: #141f38;
+      --border: #263449;
+      --text: #e7edf5;
+      --text-muted: #93a2bc;
+      --accent: #6fb3fa;
+      --accent-soft: #1b2b47;
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0f172a;
+    --surface: #141f38;
+    --border: #263449;
+    --text: #e7edf5;
+    --text-muted: #93a2bc;
+    --accent: #6fb3fa;
+    --accent-soft: #1b2b47;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    padding-inline: 20px;
+    padding-block: max(40px, env(safe-area-inset-top, 0px)) max(56px, env(safe-area-inset-bottom, 0px));
+  }
+
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+
+  .page {
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  header.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+
+  .badge {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    background: linear-gradient(160deg, #4fa9f7, #8ac8fb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 24px -8px rgba(59, 130, 246, 0.45);
+  }
+
+  .badge svg { width: 34px; height: 34px; }
+
+  h1 {
+    font-family: 'Baloo 2', 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.9rem, 4vw, 2.4rem);
+    margin: 0;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  .meta {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+  .lede {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    max-width: 52ch;
+    margin: 4px 0 0;
+  }
+
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 36px;
+  }
+
+  nav.toc h2 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin: 0 0 12px;
+    font-weight: 600;
+  }
+
+  nav.toc ol {
+    margin: 0;
+    padding-left: 1.2em;
+    columns: 2;
+    gap: 24px;
+  }
+
+  nav.toc li { break-inside: avoid; margin-bottom: 6px; }
+
+  nav.toc a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+
+  nav.toc a:hover { color: var(--accent); text-decoration: underline; }
+
+  section {
+    padding-block: 28px;
+    border-top: 1px solid var(--border);
+  }
+
+  section:first-of-type { border-top: none; padding-top: 0; }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 12px;
+    scroll-margin-top: 24px;
+    text-wrap: balance;
+  }
+
+  h2 .num {
+    display: inline-block;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    margin-right: 8px;
+  }
+
+  p { margin: 0 0 14px; color: var(--text); }
+  p:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 14px; padding-left: 1.3em; }
+  li { margin-bottom: 8px; }
+  li:last-child { margin-bottom: 0; }
+
+  strong { font-weight: 600; }
+
+  a.link { color: var(--accent); }
+
+  .callout {
+    background: var(--accent-soft);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    color: var(--text);
+  }
+
+  .callout strong { color: var(--accent); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    margin: 8px 0 14px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  th {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .table-wrap { overflow-x: auto; }
+
+  footer {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+  }
+
+  footer a { color: var(--text-muted); }
+
+  .back-to-top {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  @media (max-width: 480px) {
+    nav.toc ol { columns: 1; }
+  }
+</style>
+
+<div class="page">
+  <header class="hero" id="top">
+    <div class="badge" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <ellipse cx="12" cy="10" rx="7" ry="8.5" fill="#ffffff"/>
+        <path d="M12 18.5v3.5" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M9 21.4c0-.8.9-1.4 3-1.4s3 .6 3 1.4" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <h1>Balloon Pop Privacy Policy</h1>
+    <p class="meta">Last updated: September 18, 2026</p>
+    <p class="lede">Balloon Pop is an offline casual game published by TheRamoses. This page explains the little bit of data the app touches, and the third‑party service (ads) that isn't ours.</p>
+  </header>
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-we-store">Data stored on your device</a></li>
+      <li><a href="#ads">Advertising (Google AdMob)</a></li>
+      <li><a href="#permissions">App permissions</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#security">Data security</a></li>
+      <li><a href="#choices">Your choices</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2><span class="num">1.</span>Overview</h2>
+    <p>Balloon Pop is built to work entirely offline: there is no account to create, no sign‑in, and no server that the app talks to for gameplay. Your level progress, high scores, and sound settings live only on your own device.</p>
+    <p>The one exception is advertising: Balloon Pop shows ads through Google's AdMob service to support free play, and Google's ad SDK does communicate over the network on its own. Section 3 below explains exactly what that involves.</p>
+  </section>
+
+  <section id="data-we-store">
+    <h2><span class="num">2.</span>Data stored on your device</h2>
+    <p>Balloon Pop saves a small amount of gameplay data locally on your device, using Android's standard app storage (SharedPreferences). None of it is transmitted anywhere by us, and none of it identifies you personally.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Stored value</th><th>What it's for</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Highest unlocked level</td><td>Remembers how far you've progressed</td></tr>
+          <tr><td>High scores per level</td><td>Shown on the level‑select screen</td></tr>
+          <tr><td>Sound effects on/off</td><td>Your audio preference</td></tr>
+          <tr><td>Music on/off</td><td>Your audio preference</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Uninstalling the app permanently deletes this data. We never see it, and we don't collect names, emails, photos, contacts, or location.</p>
+  </section>
+
+  <section id="ads">
+    <h2><span class="num">3.</span>Advertising (Google AdMob)</h2>
+    <p>Balloon Pop shows two kinds of ads through the <strong>Google Mobile Ads SDK</strong> (AdMob):</p>
+    <ul>
+      <li>An occasional <strong>interstitial</strong> ad after finishing a level (skippable).</li>
+      <li>An optional <strong>rewarded</strong> ad if you choose to "Continue" after running out of time — this one is only shown if you tap the Continue button yourself.</li>
+    </ul>
+    <p>To select and measure these ads, Google's SDK may collect information such as your advertising ID, general device information, approximate location (from IP address), and ad interaction data, and may use it for ad personalization and frequency capping, subject to your device's ad privacy settings. This app does not receive or store any of that data itself — it's handled entirely by Google.</p>
+    <div class="callout">
+      You can review or reset how ads are personalized for you at any time in your device's own settings (<strong>Settings → Privacy → Ads</strong> on most Android phones), and read Google's own disclosures at <a class="link" href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a> and <a class="link" href="https://support.google.com/admob/answer/9760862" target="_blank" rel="noopener">AdMob's data disclosure</a>.
+    </div>
+  </section>
+
+  <section id="permissions">
+    <h2><span class="num">4.</span>App permissions</h2>
+    <p>Balloon Pop requests exactly one Android permission:</p>
+    <ul>
+      <li><strong>Internet access</strong> — used solely so the ads described above can load. Gameplay itself needs no network connection at all.</li>
+    </ul>
+    <p>The app does not request camera, microphone, contacts, location, storage, or any other sensitive permission.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">5.</span>Children's privacy</h2>
+    <p>Balloon Pop is a general‑audience casual game and is not specifically directed at children. We do not knowingly collect personal information from anyone, including children. If you believe a child has provided us with personal information, please contact us using the details below so we can address it — though in practice, since the app collects no personal information at all, there should be nothing to remove beyond locally stored game progress on that device.</p>
+  </section>
+
+  <section id="security">
+    <h2><span class="num">6.</span>Data security</h2>
+    <p>Because your gameplay data never leaves your device, it's protected by the same security as the rest of your phone (lock screen, disk encryption, etc. — all managed by your device's operating system, not by us). We don't operate any servers or databases that could be breached, because we don't have any.</p>
+  </section>
+
+  <section id="choices">
+    <h2><span class="num">7.</span>Your choices</h2>
+    <ul>
+      <li>Turn sound effects or music on/off any time from the in‑app <strong>Settings</strong> screen.</li>
+      <li>Reset your device's advertising ID or opt out of interest‑based ads from your device's system settings.</li>
+      <li>Uninstall the app at any time to remove all locally stored data immediately.</li>
+    </ul>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">8.</span>Changes to this policy</h2>
+    <p>If this policy changes — for example if a future update adds a new feature that touches data differently — we'll update the "Last updated" date at the top of this page. Continued use of the app after a change means you accept the updated policy.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">9.</span>Contact us</h2>
+    <p>Questions about this policy or how Balloon Pop handles data? Reach out at <a class="link" href="mailto:theramosestech@gmail.com">theramosestech@gmail.com</a>.</p>
+    <a class="back-to-top" href="#top">↑ Back to top</a>
+  </section>
+
+  <footer>
+    <span>© 2026 TheRamoses. All rights reserved.</span>
+    <span>Balloon Pop</span>
+  </footer>
+</div>
